@@ -1260,3 +1260,42 @@ img {
         display: none;
     }
 }
+/* Специфические стили для Дисклеймера */
+.disclaimer-box {
+    background: var(--color-white);
+    padding: 40px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 140, 105, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+.disclaimer-box p {
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(255, 140, 105, 0.05);
+    padding-bottom: 20px;
+}
+
+.disclaimer-box p:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.disclaimer-box strong {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.pages__footer {
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .disclaimer-box {
+        padding: 25px;
+    }
+}
