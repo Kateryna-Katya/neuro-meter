@@ -1188,7 +1188,7 @@ img {
 }
 
 .pages h1 {
-    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-size: clamp(1.8rem, 4vw, 3.5rem);
     color: var(--color-dark);
     margin-bottom: 30px;
     line-height: 1.2;
@@ -1298,4 +1298,98 @@ img {
     .disclaimer-box {
         padding: 25px;
     }
+}
+/* Стили для страницы политики данных */
+.policy-content h2 {
+    font-size: 1.6rem;
+    color: var(--color-dark);
+    margin-top: 40px;
+    border-bottom: 2px solid var(--color-primary);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.policy-content ul {
+    margin: 20px 0;
+}
+
+.policy-content ul li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: var(--color-text-light);
+}
+
+.policy-content ul ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.policy-content strong {
+    color: var(--color-dark);
+}
+
+.text-accent {
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+.pages__footer {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+/* Дополнительные стили для юридических страниц */
+.pages__intro {
+    font-size: 1.2rem;
+    color: var(--color-dark);
+    border-left: 4px solid var(--color-accent);
+    padding-left: 20px;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.custom-list {
+    counter-reset: my-counter;
+    list-style: none;
+    padding-left: 0;
+    margin: 30px 0;
+}
+
+.custom-list li {
+    counter-increment: my-counter;
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    color: var(--color-text-light);
+}
+
+.custom-list li::before {
+    content: counter(my-counter);
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 32px;
+    height: 32px;
+    background: var(--color-primary);
+    color: var(--color-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.pages__footer {
+    margin-top: 60px;
+    padding: 40px;
+    background: var(--color-white);
+    border-radius: 24px;
+    text-align: center;
+    border: 1px solid rgba(255, 140, 105, 0.1);
+}
+
+.pages__footer p {
+    margin-bottom: 20px;
+    font-weight: 600;
 }
