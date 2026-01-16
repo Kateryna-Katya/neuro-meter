@@ -1393,3 +1393,57 @@ img {
     margin-bottom: 20px;
     font-weight: 600;
 }
+/* Специальные стили для страницы Terms of Use */
+.policy-section {
+    margin-top: 40px;
+}
+
+.policy-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: var(--color-dark);
+    margin: 45px 0 20px;
+    letter-spacing: -0.5px;
+}
+
+.policy-section p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: var(--color-text-light);
+}
+
+.policy-section ul {
+    background: rgba(255, 218, 185, 0.1);
+    padding: 30px 30px 30px 50px;
+    border-radius: 20px;
+    margin: 25px 0;
+    border-left: 3px solid var(--color-accent);
+}
+
+.policy-section ul li {
+    list-style: none;
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.policy-section ul li::before {
+    content: '✕';
+    /* Иконка запрета для секции ограничений */
+    position: absolute;
+    left: -30px;
+    color: #e74c3c;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.text-accent {
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+.pages__footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding-top: 40px;
+    margin-top: 60px;
+}
